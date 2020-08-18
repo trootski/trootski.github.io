@@ -7187,3 +7187,13 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     top: 0px;
     padding: 0px; }
+
+.sidebar-inner > .lead {
+  font-size: 0.9rem; }
+
+.sidebar-inner > .lead > img {
+  margin: 0 auto;
+  width: 50%; }
+
+img.framed {
+  border-radius: 5rem !important; }

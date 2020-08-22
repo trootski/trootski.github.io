@@ -34,6 +34,9 @@ body {
     padding-left: 0px;
     padding-right: 0px; }
 
+article.card {
+  margin-bottom: 3rem; }
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

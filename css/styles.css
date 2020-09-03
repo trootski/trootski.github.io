@@ -7197,3 +7197,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 img.framed {
   border-radius: 5rem !important; }
+
+.card-text img {
+  width: 100%;
+  display: inline-block; }

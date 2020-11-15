@@ -7201,3 +7201,6 @@ img.framed {
 .card-text img {
   width: 100%;
   display: inline-block; }
+
+.work .card-text img {
+  margin-bottom: 1rem; }

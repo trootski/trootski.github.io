@@ -1,5 +1,6 @@
 body {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 .sidebar-holder {
   position: absolute;
@@ -7214,3 +7215,6 @@ img.framed {
 
 .work .card-text img {
   margin-bottom: 1rem; }
+
+.tags.btn-group > a {
+  margin-right: 0.5rem; }

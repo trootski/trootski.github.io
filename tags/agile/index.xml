@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agile on trootski</title><link>http://localhost:1313/tags/agile/</link><description>Recent content in Agile on trootski</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/agile/index.xml" rel="self" type="application/rss+xml"/><item><title>Story Templates</title><link>http://localhost:1313/post/2019/04/story-templates/</link><pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate><guid>http://localhost:1313/post/2019/04/story-templates/</guid><description>&lt;p>I have been looking after some JIRA boards recently. Our team has developed some templates for outlining the requirements. We use the following ticket types:&lt;/p>
+&lt;ul>
+&lt;li>Epic&lt;/li>
+&lt;li>Story&lt;/li>
+&lt;li>Improvement&lt;/li>
+&lt;li>Bug&lt;/li>
+&lt;/ul></description></item></channel></rss>

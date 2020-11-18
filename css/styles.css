@@ -7186,7 +7186,11 @@ a.text-dark:hover, a.text-dark:focus {
   .sidebar-holder .sidebar-inner {
     position: relative;
     top: 0px;
-    padding: 0px; }
+    padding: 0px 0px 1rem 0px; }
+    .sidebar-holder .sidebar-inner .sidebar-toggle {
+      width: 100%; }
+    .sidebar-holder .sidebar-inner #sidebarCollapse {
+      padding-top: 1rem; }
 
 .sidebar-inner > .lead {
   font-size: 0.9rem; }
@@ -7194,6 +7198,12 @@ a.text-dark:hover, a.text-dark:focus {
 .sidebar-inner > .lead > img {
   margin: 0 auto;
   width: 50%; }
+
+.sidebar-inner .most-recent h3 {
+  font-size: 1.2rem; }
+
+.sidebar-inner .most-recent ul li a {
+  font-size: 0.8rem; }
 
 img.framed {
   border-radius: 5rem !important; }

@@ -7216,5 +7216,8 @@ img.framed {
 .work .card-text img {
   margin-bottom: 1rem; }
 
-.tags.btn-group > a {
-  margin-right: 0.5rem; }
+.tags.btn-group {
+  flex-wrap: wrap; }
+  .tags.btn-group > a {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem; }

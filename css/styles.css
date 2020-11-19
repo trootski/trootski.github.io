@@ -7200,10 +7200,12 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 auto;
   width: 50%; }
 
-.sidebar-inner .most-recent h3 {
+.sidebar-inner .most-recent h3,
+.sidebar-inner .tag-list h3 {
   font-size: 1.2rem; }
 
-.sidebar-inner .most-recent ul li a {
+.sidebar-inner .most-recent ul li a,
+.sidebar-inner .tag-list ul li a {
   font-size: 0.8rem; }
 
 img.framed {

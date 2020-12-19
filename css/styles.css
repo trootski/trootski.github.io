@@ -491,10 +491,10 @@ pre {
       max-width: 541px; } }
   @media (min-width: 778px) {
     .container {
-      max-width: 730px; } }
+      max-width: 960px; } }
   @media (min-width: 788px) {
     .container {
-      max-width: 740px; } }
+      max-width: 1140px; } }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
@@ -512,12 +512,12 @@ pre {
     max-width: 541px; } }
 
 @media (min-width: 778px) {
-  .container, .container-sm, .container-md, .container-lg {
-    max-width: 730px; } }
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 960px; } }
 
 @media (min-width: 788px) {
-  .container, .container-sm, .container-md, .container-xl {
-    max-width: 740px; } }
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px; } }
 
 .row {
   display: flex;

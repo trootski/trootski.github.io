@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://trootski.github.io/sitemap.xml

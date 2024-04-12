@@ -1,7 +1,6 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>trootski | Baby steps with Python</title><meta name=description content="My thoughts on starting off with Python"><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=generator content="Hugo 0.111.3"><meta name=ROBOTS content="INDEX, FOLLOW"><meta property="og:title" content="Baby steps with Python"><meta property="og:description" content="My thoughts on starting off with Python"><meta property="og:type" content="article"><meta property="og:url" content="https://trootski.github.io/post/2011/06/baby-steps-with-python/"><meta property="article:section" content="post"><meta property="article:published_time" content="2011-06-05T00:00:00+00:00"><meta property="article:modified_time" content="2011-06-05T00:00:00+00:00"><link href=/css/styles.css rel=stylesheet><link rel=canonical href=https://trootski.github.io/post/2011/06/baby-steps-with-python/><script type=application/javascript src=/main.js></script>
-<link rel=icon type=image/png href=/images/favicon.png></head><body><nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary"><div class=container><a href=/ class=navbar-brand>trootski</a>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>trootski | Baby steps with Python</title><meta name=description content="My thoughts on starting off with Python"><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=generator content="Hugo 0.80.0"><meta name=ROBOTS content="INDEX, FOLLOW"><meta property="og:title" content="Baby steps with Python"><meta property="og:description" content="My thoughts on starting off with Python"><meta property="og:type" content="article"><meta property="og:url" content="https://trootski.github.io/post/2011/06/baby-steps-with-python/"><meta property="article:published_time" content="2011-06-05T00:00:00+00:00"><meta property="article:modified_time" content="2011-06-05T00:00:00+00:00"><link href=/css/styles.css rel=stylesheet><link rel=canonical href=https://trootski.github.io/post/2011/06/baby-steps-with-python/><script type=application/javascript src=/main.js></script><link rel=icon type=image/png href=/images/favicon.png></head><body><nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary"><div class=container><a href=/ class=navbar-brand>trootski</a>
 <button class="navbar-toggle d-xs-block d-md-none" type=button data-toggle=toggle data-target=#mainNavAltContent aria-controls=mainNavAltContent aria-expanded=false aria-label="Toggle Navigation">
-<span class=navbar-toggler-icon></span></button><div class="navbar-collapse collapse" id=mainNavAltContent><ul class="navbar-nav mr-auto"><li class=nav-item><a class=nav-link href=/ title="Blog page">Blog</a></li><li class=nav-item><a class=nav-link href=/work title="Work page">Work</a></li><li class=nav-item><a class=nav-link href=/about title="About page">About</a></li></ul><ul class="navbar-nav d-flex flex-row"><li class=nav-item><a href=https://twitter.com/trootski target=_blank class="link-transition twitter" title="Twitter link" rel=noopener aria-label="follow on Twitter——Opens in a new window"><svg height="32" style="enable-background:new 0 0 67 67" viewBox="0 0 67 67" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167 22.283c-2.619.953-4.274 3.411-4.086 6.101l.063 1.038-1.048-.127c-3.813-.487-7.145-2.139-9.974-4.915l-1.383-1.377-.356 1.017c-.754 2.267-.272 4.661 1.299 6.271.838.89.649 1.017-.796.487-.503-.169-.943-.296-.985-.233-.146.149.356 2.076.754 2.839.545 1.06 1.655 2.097 2.871 2.712l1.027.487-1.215.021c-1.173.0-1.215.021-1.089.467.419 1.377 2.074 2.839 3.918 3.475l1.299.444-1.131.678c-1.676.976-3.646 1.526-5.616 1.568C19.775 43.256 19 43.341 19 43.405c0 .211 2.557 1.397 4.044 1.864 4.463 1.377 9.765.783 13.746-1.568 2.829-1.673 5.657-5 6.978-8.221.713-1.716 1.425-4.851 1.425-6.354.0-.975.063-1.102 1.236-2.267.692-.678 1.341-1.419 1.467-1.631.21-.403.188-.403-.88-.043-1.781.636-2.033.551-1.152-.402.649-.678 1.425-1.907 1.425-2.267.0-.063-.314.042-.671.233-.377.212-1.215.53-1.844.72l-1.131.361-1.027-.7c-.566-.381-1.361-.805-1.781-.932C39.766 21.902 38.131 21.944 37.167 22.283zM33 64C16.432 64 3 50.569 3 34S16.432 4 33 4s30 13.431 30 30S49.568 64 33 64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg></a></li><li class=nav-item><a href=https://www.linkedin.com/in/troot1/ target=_blank class="link-transition linkedin" title="LinkedIn link" rel=noopener aria-label="follow on LinkedIn——Opens in a new window"><svg height="32" style="enable-background:new 0 0 65 65" viewBox="0 0 65 65" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837 48.137V36.425c0-6.275-3.35-9.195-7.816-9.195-3.604.0-5.219 1.983-6.119 3.374V27.71h-6.79c.09 1.917.0 20.427.0 20.427h6.79V36.729c0-.609.044-1.219.224-1.655.49-1.22 1.607-2.483 3.482-2.483 2.458.0 3.44 1.873 3.44 4.618v10.929H50.837zM22.959 24.922c2.367.0 3.842-1.57 3.842-3.531-.044-2.003-1.475-3.528-3.797-3.528s-3.841 1.524-3.841 3.528c0 1.961 1.474 3.531 3.753 3.531H22.959zM34 64C17.432 64 4 50.568 4 34 4 17.431 17.432 4 34 4s30 13.431 30 30c0 16.568-13.432 30-30 30zM26.354 48.137V27.71h-6.789v20.427h6.789z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg></a></li><li class=nav-item><a href=https://github.com/trootski target=_blank class="link-transition github" title="Github link" rel=noopener aria-label="follow on Github——Opens in a new window"><svg height="32" style="enable-background:new 0 0 512 512" viewBox="0 0 512 512" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256 32C132.3 32 32 134.8 32 261.7c0 101.5 64.2 187.5 153.2 217.9 11.2 2.1 15.3-5 15.3-11.1.0-5.5-.2-19.9-.3-39.1-62.3 13.9-75.5-30.8-75.5-30.8-10.2-26.5-24.9-33.6-24.9-33.6-20.3-14.3 1.5-14 1.5-14 22.5 1.6 34.3 23.7 34.3 23.7 20 35.1 52.4 25 65.2 19.1 2-14.8 7.8-25 14.2-30.7-49.7-5.8-102-25.5-102-113.5.0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8.0.0 18.8-6.2 61.6 23.5 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 42.8-29.7 61.5-23.5 61.5-23.5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6.0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5.0 30.7-.3 55.5-.3 63 0 6.1 4 13.3 15.4 11C415.9 449.1 480 363.1 480 261.7 480 134.8 379.7 32 256 32z"/></svg></a></li></ul></div></div></nav><div class=container><div class=row><div class="col-12 col-md-3" role=navigation><div class="sidebar-holder sticky-top"><div class=sidebar-inner><div class=lead><img src=/images/avatar.jpeg class="img-thumbnail d-block framed mb-auto"><p>Blog for trootski. All opinions expressed are dubious and his own.</p></div><button class="btn btn-dark sidebar-toggle d-xs-block d-md-none" type=button data-toggle=collapse data-target=#collapseMore aria-expanded=false aria-controls=collapseMore>More</button><div class="d-none d-sm-block" id=sidebarCollapse><div class=most-recent><h3>Most Recent</h3><ul><li><a href=/post/2021/12/what-i-wished-id-known-before-working-with-apache-camel/>What I wished I'd known before working with Apache Camel</a></li><li><a href=/post/2021/01/bond-project/>Bond Project</a></li><li><a href=/post/2020/12/>Spring Handle Constraint Violation</a></li></ul></div><div class=tag-list><h3>Tags</h3><div class="tags btn-group"><a href=/tags/actionscript class="badge badge-primary" title="All pages with tag actionscript">actionscript</a>
+<span class=navbar-toggler-icon></span></button><div class="navbar-collapse collapse" id=mainNavAltContent><ul class="navbar-nav mr-auto"><li class=nav-item><a class=nav-link href=/ title="Blog page">Blog</a></li><li class=nav-item><a class=nav-link href=/work title="Work page">Work</a></li><li class=nav-item><a class=nav-link href=/about title="About page">About</a></li></ul><ul class="navbar-nav d-flex flex-row"><li class=nav-item><a href=https://twitter.com/trootski target=_blank class="link-transition twitter" title="Twitter link" rel=noopener aria-label="follow on Twitter——Opens in a new window"><svg height="32" style="enable-background:new 0 0 67 67" viewBox="0 0 67 67" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167 22.283c-2.619.953-4.274 3.411-4.086 6.101l.063 1.038-1.048-.127c-3.813-.487-7.145-2.139-9.974-4.915l-1.383-1.377-.356 1.017c-.754 2.267-.272 4.661 1.299 6.271.838.89.649 1.017-.796.487-.503-.169-.943-.296-.985-.233-.146.149.356 2.076.754 2.839.545 1.06 1.655 2.097 2.871 2.712l1.027.487-1.215.021c-1.173.0-1.215.021-1.089.467.419 1.377 2.074 2.839 3.918 3.475l1.299.444-1.131.678c-1.676.976-3.646 1.526-5.616 1.568C19.775 43.256 19 43.341 19 43.405c0 .211 2.557 1.397 4.044 1.864 4.463 1.377 9.765.783 13.746-1.568 2.829-1.673 5.657-5 6.978-8.221.713-1.716 1.425-4.851 1.425-6.354.0-.975.063-1.102 1.236-2.267.692-.678 1.341-1.419 1.467-1.631.21-.403.188-.403-.88-.043-1.781.636-2.033.551-1.152-.402.649-.678 1.425-1.907 1.425-2.267.0-.063-.314.042-.671.233-.377.212-1.215.53-1.844.72l-1.131.361-1.027-.7c-.566-.381-1.361-.805-1.781-.932C39.766 21.902 38.131 21.944 37.167 22.283zM33 64C16.432 64 3 50.569 3 34S16.432 4 33 4s30 13.431 30 30S49.568 64 33 64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg></a></li><li class=nav-item><a href=https://www.linkedin.com/in/troot1/ target=_blank class="link-transition linkedin" title="LinkedIn link" rel=noopener aria-label="follow on LinkedIn——Opens in a new window"><svg height="32" style="enable-background:new 0 0 65 65" viewBox="0 0 65 65" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837 48.137V36.425c0-6.275-3.35-9.195-7.816-9.195-3.604.0-5.219 1.983-6.119 3.374V27.71h-6.79c.09 1.917.0 20.427.0 20.427h6.79V36.729c0-.609.044-1.219.224-1.655.49-1.22 1.607-2.483 3.482-2.483 2.458.0 3.44 1.873 3.44 4.618v10.929H50.837zM22.959 24.922c2.367.0 3.842-1.57 3.842-3.531-.044-2.003-1.475-3.528-3.797-3.528s-3.841 1.524-3.841 3.528c0 1.961 1.474 3.531 3.753 3.531H22.959zM34 64C17.432 64 4 50.568 4 34 4 17.431 17.432 4 34 4s30 13.431 30 30C64 50.568 50.568 64 34 64zM26.354 48.137V27.71h-6.789v20.427H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg></a></li><li class=nav-item><a href=https://github.com/trootski target=_blank class="link-transition github" title="Github link" rel=noopener aria-label="follow on Github——Opens in a new window"><svg height="32" style="enable-background:new 0 0 512 512" viewBox="0 0 512 512" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256 32C132.3 32 32 134.8 32 261.7c0 101.5 64.2 187.5 153.2 217.9 11.2 2.1 15.3-5 15.3-11.1.0-5.5-.2-19.9-.3-39.1-62.3 13.9-75.5-30.8-75.5-30.8-10.2-26.5-24.9-33.6-24.9-33.6-20.3-14.3 1.5-14 1.5-14 22.5 1.6 34.3 23.7 34.3 23.7 20 35.1 52.4 25 65.2 19.1 2-14.8 7.8-25 14.2-30.7-49.7-5.8-102-25.5-102-113.5.0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8.0.0 18.8-6.2 61.6 23.5 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 42.8-29.7 61.5-23.5 61.5-23.5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6.0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5.0 30.7-.3 55.5-.3 63 0 6.1 4 13.3 15.4 11C415.9 449.1 480 363.1 480 261.7 480 134.8 379.7 32 256 32z"/></svg></a></li></ul></div></div></nav><div class=container><div class=row><div class="col-12 col-md-3" role=navigation><div class="sidebar-holder sticky-top"><div class=sidebar-inner><div class=lead><img src=/images/avatar.jpeg class="img-thumbnail d-block framed mb-auto"><p>Blog for trootski. All opinions expressed are dubious and his own.</p></div><button class="btn btn-dark sidebar-toggle d-xs-block d-md-none" type=button data-toggle=collapse data-target=#collapseMore aria-expanded=false aria-controls=collapseMore>More</button><div class="d-none d-sm-block" id=sidebarCollapse><div class=most-recent><h3>Most Recent</h3><ul><li><a href=/post/2021/12/what-i-wished-id-known-before-working-with-apache-camel/>What I wished I'd known before working with Apache Camel</a></li><li><a href=/post/2021/01/bond-project/>Bond Project</a></li><li><a href=/post/2020/12/>Spring Handle Constraint Violation</a></li></ul></div><div class=tag-list><h3>Tags</h3><div class="tags btn-group"><a href=/tags/actionscript class="badge badge-primary" title="All pages with tag actionscript">actionscript</a>
 <a href=/tags/agile class="badge badge-primary" title="All pages with tag agile">agile</a>
 <a href=/tags/email class="badge badge-primary" title="All pages with tag email">email</a>
 <a href=/tags/hardware class="badge badge-primary" title="All pages with tag hardware">hardware</a>
@@ -13,232 +12,232 @@
 <a href=/tags/spring-boot class="badge badge-primary" title="All pages with tag spring-boot">spring-boot</a>
 <a href=/tags/testing class="badge badge-primary" title="All pages with tag testing">testing</a>
 <a href=/tags/tooling class="badge badge-primary" title="All pages with tag tooling">tooling</a>
-<a href=/tags/wordpress class="badge badge-primary" title="All pages with tag wordpress">wordpress</a></div></div></div></div></div></div><main class="col-12 col-md-8" role=main><article class="card border-0"><a href=/post/2011/06/baby-steps-with-python/other-python-icon.png><img src=/post/2011/06/baby-steps-with-python/other-python-icon_hud4771135f4b7a0129c074cdb55d78b32_9813_730x547_fit_q97_box_3.png class=card-img-top alt="Cover image from Baby steps with Python"></a><div class=card-body><h3 class=card-title>Baby steps with Python</h3><small class=text-muted>June 5, 2011</small><div class=card-text><p>Started out playing around with Python as a scripting tool. Have to say, it really is a neat mix of the kinda power and libraries I&rsquo;m used to with Perl and the flexibility of a pure scripting language.</p><p>Just for a giggle, I decided to re-write my <a href=/post/2009/08/daily-filing/ title="Daily backup and filing">C# backup script</a> to backup some of my mac folders. Most of the language I&rsquo;m still getting my head around. 4 times out of ten, each line gets a semi-colon. I&rsquo;m using PyDev on Aptana.</p><p>Here&rsquo;s the code I ended up with:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Created on Apr 4, 2011
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>This script is designed to take all the files from one directory and move
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>them to another date stamped folder. This reduces the amount of clutter
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>on certain key folders which have a high amount of files created in them
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>@author: troot
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> os
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> datetime <span style=color:#f92672>import</span> date
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> re
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> urllib
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> xml.dom <span style=color:#f92672>import</span> minidom, Node
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> shutil
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ArchiveFolders</span>():
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> __init__(self, <span style=color:#f92672>**</span>kwargs):
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>properties <span style=color:#f92672>=</span> kwargs
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;slash_char&#39;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_get_slash_char()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> self<span style=color:#f92672>.</span>xml_config_url <span style=color:#f92672>is</span> <span style=color:#66d9ef>None</span>:
-</span></span><span style=display:flex><span>            self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;xml_config_url&#39;</span>] <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>../</span>archive_config<span style=color:#f92672>.</span>xml<span style=color:#f92672>&amp;</span>quot;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Run the archiving process
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>run</span>(self):
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>try</span>:
-</span></span><span style=display:flex><span>            self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;config_dom&#39;</span>] <span style=color:#f92672>=</span> minidom<span style=color:#f92672>.</span>parse(urllib<span style=color:#f92672>.</span>urlopen(self<span style=color:#f92672>.</span>xml_config_url))
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>IOError</span>:
-</span></span><span style=display:flex><span>            print <span style=color:#f92672>&amp;</span>quot;Couldn<span style=color:#e6db74>&#39;t find the configuration file. Please check the value and try again.&amp;quot;</span>
-</span></span><span style=display:flex><span>            exit()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> ark <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>_next_ark_config():
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>try</span>:
-</span></span><span style=display:flex><span>                self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;conf&#39;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_process_ark_config(ark)
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>ValueError</span>:
-</span></span><span style=display:flex><span>                print <span style=color:#f92672>&amp;</span>quot;There <span style=color:#f92672>is</span> an error <span style=color:#f92672>in</span> the xml config<span style=color:#f92672>.</span> Please check the file <span style=color:#f92672>and</span> <span style=color:#66d9ef>try</span> again<span style=color:#f92672>&amp;</span>quot;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            self<span style=color:#f92672>.</span>_create_src_folders(self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>src_dir)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>dest_dir <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_create_archive_folders(self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>dest_dir)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            self<span style=color:#f92672>.</span>_execute_archiving(self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>src_dir, self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>dest_dir, self<span style=color:#f92672>.</span>slash_char)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Loop through the src_dir and move each of its files/folders to the dest_dir (ignore hidden files)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_execute_archiving</span>(self, src_dir, dest_dir, slash_char):
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        srcFolderContents <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>listdir(src_dir)
-</span></span><span style=display:flex><span>        startDotREGEX <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>compile(<span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>^.&amp;</span>quot;)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> file <span style=color:#f92672>in</span> srcFolderContents:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> startDotREGEX<span style=color:#f92672>.</span>match(file) <span style=color:#f92672>and</span> <span style=color:#f92672>not</span> file <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>ignore:
-</span></span><span style=display:flex><span>                print <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (dest_dir, slash_char, file)
-</span></span><span style=display:flex><span>                shutil<span style=color:#f92672>.</span>move(
-</span></span><span style=display:flex><span>                    <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (src_dir, slash_char, file),
-</span></span><span style=display:flex><span>                    <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (dest_dir, slash_char, file)
-</span></span><span style=display:flex><span>                )
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Check the src_dir exists. If it doesn&#39;t, create it
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_create_src_folders</span>(self, src_dir):
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>try</span>:
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(src_dir):
-</span></span><span style=display:flex><span>                os<span style=color:#f92672>.</span>makedirs(src_dir)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>OSError</span> <span style=color:#66d9ef>as</span> oe:
-</span></span><span style=display:flex><span>            print <span style=color:#f92672>&amp;</span>quot;Error creating the source folder<span style=color:#f92672>.</span> Please ensure you have permission to write the folder below<span style=color:#f92672>.&amp;</span>quot; <span style=color:#f92672>%</span> oe
-</span></span><span style=display:flex><span>            exit()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Create the dest_dir folder into which the files will be moved
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_create_archive_folders</span>(self, dest_dir):
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>try</span>:
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(dest_dir):
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>raise</span> <span style=color:#a6e22e>OSError</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            month_date_stub <span style=color:#f92672>=</span> date<span style=color:#f92672>.</span>today()<span style=color:#f92672>.</span>strftime(<span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>Y_<span style=color:#f92672>%</span>m<span style=color:#f92672>&amp;</span>quot;)
-</span></span><span style=display:flex><span>            day_date_stub <span style=color:#f92672>=</span> date<span style=color:#f92672>.</span>today()<span style=color:#f92672>.</span>strftime(<span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>Y_<span style=color:#f92672>%</span>m_<span style=color:#f92672>%</span>d<span style=color:#f92672>&amp;</span>quot;)
-</span></span><span style=display:flex><span>            lst_dest_dir <span style=color:#f92672>=</span> [month_date_stub, day_date_stub]
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            dest_dir <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (dest_dir, self<span style=color:#f92672>.</span>slash_char, self<span style=color:#f92672>.</span>slash_char<span style=color:#f92672>.</span>join(i <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> lst_dest_dir))
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(dest_dir):
-</span></span><span style=display:flex><span>                os<span style=color:#f92672>.</span>makedirs(dest_dir)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> dest_dir
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>OSError</span> <span style=color:#66d9ef>as</span> oe:
-</span></span><span style=display:flex><span>            print <span style=color:#f92672>&amp;</span>quot;Error creating the destination folder<span style=color:#f92672>.</span> Please ensure you have permission to the folder below<span style=color:#f92672>.</span>n<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> oe
-</span></span><span style=display:flex><span>            exit()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Read in the xml config (archive_config.xml) and save the settings
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_next_ark_config</span>(self):
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> node <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>config_dom<span style=color:#f92672>.</span>getElementsByTagName(<span style=color:#f92672>&amp;</span>quot;ark<span style=color:#f92672>&amp;</span>quot;):
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>yield</span> node
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Take an ark node and loop through the info inside
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_process_ark_config</span>(self, ark):
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        ark_config <span style=color:#f92672>=</span> ArkConfig()
-</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>_remove_whitespace_nodes(ark)
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> node <span style=color:#f92672>in</span> ark<span style=color:#f92672>.</span>childNodes:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> node<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>ELEMENT_NODE:
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>if</span> node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;src_config<span style=color:#f92672>&amp;</span>quot;:
-</span></span><span style=display:flex><span>                    <span style=color:#66d9ef>for</span> src_node <span style=color:#f92672>in</span> node<span style=color:#f92672>.</span>childNodes:
-</span></span><span style=display:flex><span>                        <span style=color:#66d9ef>if</span> src_node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;src_dir<span style=color:#f92672>&amp;</span>quot;:
-</span></span><span style=display:flex><span>                            ark_config<span style=color:#f92672>.</span>set_property(<span style=color:#e6db74>&#39;src_dir&#39;</span>, self<span style=color:#f92672>.</span>_get_node_text(src_node<span style=color:#f92672>.</span>childNodes))
-</span></span><span style=display:flex><span>                        <span style=color:#66d9ef>elif</span> src_node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;ignore<span style=color:#f92672>&amp;</span>quot;:
-</span></span><span style=display:flex><span>                            ark_config<span style=color:#f92672>.</span>ignore<span style=color:#f92672>.</span>append(self<span style=color:#f92672>.</span>_get_node_text(src_node<span style=color:#f92672>.</span>childNodes))
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>if</span> node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;dest_dir<span style=color:#f92672>&amp;</span>quot;:
-</span></span><span style=display:flex><span>                    ark_config<span style=color:#f92672>.</span>set_property(<span style=color:#e6db74>&#39;dest_dir&#39;</span>, self<span style=color:#f92672>.</span>_get_node_text(node<span style=color:#f92672>.</span>childNodes))
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> ark_config
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Given a particular node, get its text value
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_get_node_text</span>(self, node):
-</span></span><span style=display:flex><span>        retVal <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>&amp;</span>quot;
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> child <span style=color:#f92672>in</span> node:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> child<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>TEXT_NODE:
-</span></span><span style=display:flex><span>                retVal <span style=color:#f92672>=</span> retVal <span style=color:#f92672>+</span> child<span style=color:#f92672>.</span>data
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>elif</span> child<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>CDATA_SECTION_NODE:
-</span></span><span style=display:flex><span>                retVal <span style=color:#f92672>=</span> retVal <span style=color:#f92672>+</span> child<span style=color:#f92672>.</span>data
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>elif</span> child<span style=color:#f92672>.</span>hasChildNodes():
-</span></span><span style=display:flex><span>                retVal <span style=color:#f92672>=</span> retVal <span style=color:#f92672>+</span> self<span style=color:#f92672>.</span>_get_node_text(child<span style=color:#f92672>.</span>childNodes)
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> retVal
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Take white spaces out of the xml structure (they make traversing more difficult)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_remove_whitespace_nodes</span>(self, node, unlink<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>):
-</span></span><span style=display:flex><span>        remove_list <span style=color:#f92672>=</span> []
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> child <span style=color:#f92672>in</span> node<span style=color:#f92672>.</span>childNodes:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> child<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>TEXT_NODE <span style=color:#f92672>and</span> <span style=color:#f92672>not</span> child<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>strip():
-</span></span><span style=display:flex><span>                remove_list<span style=color:#f92672>.</span>append(child)
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>elif</span> child<span style=color:#f92672>.</span>hasChildNodes():
-</span></span><span style=display:flex><span>                self<span style=color:#f92672>.</span>_remove_whitespace_nodes(child, unlink)
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> node <span style=color:#f92672>in</span> remove_list:
-</span></span><span style=display:flex><span>            node<span style=color:#f92672>.</span>parentNode<span style=color:#f92672>.</span>removeChild(node)
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> unlink:
-</span></span><span style=display:flex><span>                node<span style=color:#f92672>.</span>unlink()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;&#39;&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Set what the folder delimeter should be
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_get_slash_char</span>(self):
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> os<span style=color:#f92672>.</span>name <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;nt<span style=color:#f92672>&amp;</span>quot;:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#f92672>&amp;</span>quot;\<span style=color:#f92672>&amp;</span>quot;
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>/&amp;</span>quot;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>slash_char</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;slash_char&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>conf</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;conf&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>xml_config_url</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;xml_config_url&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>config_dom</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;config_dom&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ArkConfig</span>():
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> __init__(self, <span style=color:#f92672>**</span>kwargs):
-</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>properties <span style=color:#f92672>=</span> kwargs
-</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;ignore&#39;</span>] <span style=color:#f92672>=</span> []
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> __repr__(self):
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#f92672>&amp;</span>quot;ArkConfig (src_dir: <span style=color:#f92672>%</span>s, dest_dir: <span style=color:#f92672>%</span>s, ignore: <span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (self<span style=color:#f92672>.</span>src_dir, self<span style=color:#f92672>.</span>dest_dir, self<span style=color:#f92672>.</span>ignore)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>set_property</span>(self, prop, val):
-</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>properties[prop] <span style=color:#f92672>=</span> val
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>src_dir</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;src_dir&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>dest_dir</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;dest_dir&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@dest_dir.setter</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>dest_dir</span>(self, val): self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;dest_dir&#39;</span>] <span style=color:#f92672>=</span> val
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@dest_dir.deleter</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>dest_dir</span>(self): <span style=color:#66d9ef>del</span> self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;dest_dir&#39;</span>]
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>@property</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>ignore</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;ignore&#39;</span>, <span style=color:#66d9ef>None</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__<span style=color:#f92672>==&amp;</span>quot;__main__<span style=color:#f92672>&amp;</span>quot;:
-</span></span><span style=display:flex><span>    bf <span style=color:#f92672>=</span> ArchiveFolders()
-</span></span><span style=display:flex><span>    bf<span style=color:#f92672>.</span>run()</span></span></code></pre></div><p>And then the config file has the format:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=display:flex><span><span style=color:#75715e>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&lt;config&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;ark&gt;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&lt;src_config&gt;</span>
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&lt;src_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[c:\Users\troot\Desktop\_today]]&gt;</span><span style=color:#f92672>&lt;/src_dir&gt;</span>
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&lt;ignore&gt;</span><span style=color:#75715e>&lt;![CDATA[ignore_1.txt]]&gt;</span><span style=color:#f92672>&lt;/ignore&gt;</span>
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&lt;ignore&gt;</span><span style=color:#75715e>&lt;![CDATA[ignore_2.txt]]&gt;</span><span style=color:#f92672>&lt;/ignore&gt;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&lt;/src_config&gt;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&lt;dest_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[c:\Users\troot\Documents\Restore\_today]]&gt;</span><span style=color:#f92672>&lt;/dest_dir&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;/ark&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;ark&gt;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&lt;src_config&gt;</span>
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&lt;src_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[C:\Users\troot\Downloads]]&gt;</span><span style=color:#f92672>&lt;/src_dir&gt;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&lt;/src_config&gt;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&lt;dest_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[C:UserstrootDocumentsRestoreDownloads]]&gt;</span><span style=color:#f92672>&lt;/dest_dir&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;/ark&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&lt;/config&gt;</span></span></span></code></pre></div></div><div class=card-footer><h5>Tags</h5><div class="tags btn-group" role=group aria-label="Tags list"><a href=/tags/software class="badge badge-primary">Software</a>
+<a href=/tags/wordpress class="badge badge-primary" title="All pages with tag wordpress">wordpress</a></div></div></div></div></div></div><main class="col-12 col-md-8" role=main><article class="card border-0"><a href=/post/2011/06/baby-steps-with-python/other-python-icon.png><img src=/post/2011/06/baby-steps-with-python/other-python-icon_hud4771135f4b7a0129c074cdb55d78b32_9813_730x547_fit_q97_box_2.png class=card-img-top alt="Cover image from Baby steps with Python"></a><div class=card-body><h3 class=card-title>Baby steps with Python</h3><small class=text-muted>June 5, 2011</small><div class=card-text><p>Started out playing around with Python as a scripting tool. Have to say, it really is a neat mix of the kinda power and libraries I&rsquo;m used to with Perl and the flexibility of a pure scripting language.</p><p>Just for a giggle, I decided to re-write my <a href=/post/2009/08/daily-filing/ title="Daily backup and filing">C# backup script</a> to backup some of my mac folders. Most of the language I&rsquo;m still getting my head around. 4 times out of ten, each line gets a semi-colon. I&rsquo;m using PyDev on Aptana.</p><p>Here&rsquo;s the code I ended up with:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>Created on Apr 4, 2011
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>This script is designed to take all the files from one directory and move
+</span><span style=color:#e6db74>them to another date stamped folder. This reduces the amount of clutter
+</span><span style=color:#e6db74>on certain key folders which have a high amount of files created in them
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>@author: troot
+</span><span style=color:#e6db74>&#39;&#39;&#39;</span>
+
+<span style=color:#f92672>import</span> os
+<span style=color:#f92672>from</span> datetime <span style=color:#f92672>import</span> date
+<span style=color:#f92672>import</span> re
+<span style=color:#f92672>import</span> urllib
+<span style=color:#f92672>from</span> xml.dom <span style=color:#f92672>import</span> minidom, Node
+<span style=color:#f92672>import</span> shutil
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ArchiveFolders</span>():
+
+    <span style=color:#66d9ef>def</span> __init__(self, <span style=color:#f92672>**</span>kwargs):
+
+        self<span style=color:#f92672>.</span>properties <span style=color:#f92672>=</span> kwargs
+
+        self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;slash_char&#39;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_get_slash_char()
+
+        <span style=color:#66d9ef>if</span> self<span style=color:#f92672>.</span>xml_config_url <span style=color:#f92672>is</span> None:
+            self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;xml_config_url&#39;</span>] <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>../</span>archive_config<span style=color:#f92672>.</span>xml<span style=color:#f92672>&amp;</span>quot;
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Run the archiving process
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>run</span>(self):
+
+        <span style=color:#66d9ef>try</span>:
+            self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;config_dom&#39;</span>] <span style=color:#f92672>=</span> minidom<span style=color:#f92672>.</span>parse(urllib<span style=color:#f92672>.</span>urlopen(self<span style=color:#f92672>.</span>xml_config_url))
+        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>IOError</span>:
+            <span style=color:#66d9ef>print</span> <span style=color:#f92672>&amp;</span>quot;Couldn<span style=color:#e6db74>&#39;t find the configuration file. Please check the value and try again.&amp;quot;</span>
+            exit()
+
+        <span style=color:#66d9ef>for</span> ark <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>_next_ark_config():
+
+            <span style=color:#66d9ef>try</span>:
+                self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;conf&#39;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_process_ark_config(ark)
+            <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>ValueError</span>:
+                <span style=color:#66d9ef>print</span> <span style=color:#f92672>&amp;</span>quot;There <span style=color:#f92672>is</span> an error <span style=color:#f92672>in</span> the xml config<span style=color:#f92672>.</span> Please check the file <span style=color:#f92672>and</span> <span style=color:#66d9ef>try</span> again<span style=color:#f92672>&amp;</span>quot;
+
+            self<span style=color:#f92672>.</span>_create_src_folders(self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>src_dir)
+
+            self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>dest_dir <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_create_archive_folders(self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>dest_dir)
+
+            self<span style=color:#f92672>.</span>_execute_archiving(self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>src_dir, self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>dest_dir, self<span style=color:#f92672>.</span>slash_char)
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Loop through the src_dir and move each of its files/folders to the dest_dir (ignore hidden files)
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_execute_archiving</span>(self, src_dir, dest_dir, slash_char):
+
+        srcFolderContents <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>listdir(src_dir)
+        startDotREGEX <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>compile(<span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>^.&amp;</span>quot;)
+
+        <span style=color:#66d9ef>for</span> file <span style=color:#f92672>in</span> srcFolderContents:
+            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> startDotREGEX<span style=color:#f92672>.</span>match(file) <span style=color:#f92672>and</span> <span style=color:#f92672>not</span> file <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>conf<span style=color:#f92672>.</span>ignore:
+                <span style=color:#66d9ef>print</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (dest_dir, slash_char, file)
+                shutil<span style=color:#f92672>.</span>move(
+                    <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (src_dir, slash_char, file),
+                    <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (dest_dir, slash_char, file)
+                )
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Check the src_dir exists. If it doesn&#39;t, create it
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_create_src_folders</span>(self, src_dir):
+        <span style=color:#66d9ef>try</span>:
+
+            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(src_dir):
+                os<span style=color:#f92672>.</span>makedirs(src_dir)
+
+        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>OSError</span> <span style=color:#66d9ef>as</span> oe:
+            <span style=color:#66d9ef>print</span> <span style=color:#f92672>&amp;</span>quot;Error creating the source folder<span style=color:#f92672>.</span> Please ensure you have permission to write the folder below<span style=color:#f92672>.&amp;</span>quot; <span style=color:#f92672>%</span> oe
+            exit()
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Create the dest_dir folder into which the files will be moved
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_create_archive_folders</span>(self, dest_dir):
+
+        <span style=color:#66d9ef>try</span>:
+
+            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(dest_dir):
+                <span style=color:#66d9ef>raise</span> <span style=color:#a6e22e>OSError</span>
+
+            month_date_stub <span style=color:#f92672>=</span> date<span style=color:#f92672>.</span>today()<span style=color:#f92672>.</span>strftime(<span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>Y_<span style=color:#f92672>%</span>m<span style=color:#f92672>&amp;</span>quot;)
+            day_date_stub <span style=color:#f92672>=</span> date<span style=color:#f92672>.</span>today()<span style=color:#f92672>.</span>strftime(<span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>Y_<span style=color:#f92672>%</span>m_<span style=color:#f92672>%</span>d<span style=color:#f92672>&amp;</span>quot;)
+            lst_dest_dir <span style=color:#f92672>=</span> [month_date_stub, day_date_stub]
+
+            dest_dir <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (dest_dir, self<span style=color:#f92672>.</span>slash_char, self<span style=color:#f92672>.</span>slash_char<span style=color:#f92672>.</span>join(i <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> lst_dest_dir))
+
+            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(dest_dir):
+                os<span style=color:#f92672>.</span>makedirs(dest_dir)
+
+            <span style=color:#66d9ef>return</span> dest_dir
+
+        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>OSError</span> <span style=color:#66d9ef>as</span> oe:
+            <span style=color:#66d9ef>print</span> <span style=color:#f92672>&amp;</span>quot;Error creating the destination folder<span style=color:#f92672>.</span> Please ensure you have permission to the folder below<span style=color:#f92672>.</span>n<span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> oe
+            exit()
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Read in the xml config (archive_config.xml) and save the settings
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_next_ark_config</span>(self):
+        <span style=color:#66d9ef>for</span> node <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>config_dom<span style=color:#f92672>.</span>getElementsByTagName(<span style=color:#f92672>&amp;</span>quot;ark<span style=color:#f92672>&amp;</span>quot;):
+            <span style=color:#66d9ef>yield</span> node
+        <span style=color:#66d9ef>return</span>
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Take an ark node and loop through the info inside
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_process_ark_config</span>(self, ark):
+
+        ark_config <span style=color:#f92672>=</span> ArkConfig()
+        self<span style=color:#f92672>.</span>_remove_whitespace_nodes(ark)
+        <span style=color:#66d9ef>for</span> node <span style=color:#f92672>in</span> ark<span style=color:#f92672>.</span>childNodes:
+            <span style=color:#66d9ef>if</span> node<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>ELEMENT_NODE:
+                <span style=color:#66d9ef>if</span> node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;src_config<span style=color:#f92672>&amp;</span>quot;:
+                    <span style=color:#66d9ef>for</span> src_node <span style=color:#f92672>in</span> node<span style=color:#f92672>.</span>childNodes:
+                        <span style=color:#66d9ef>if</span> src_node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;src_dir<span style=color:#f92672>&amp;</span>quot;:
+                            ark_config<span style=color:#f92672>.</span>set_property(<span style=color:#e6db74>&#39;src_dir&#39;</span>, self<span style=color:#f92672>.</span>_get_node_text(src_node<span style=color:#f92672>.</span>childNodes))
+                        <span style=color:#66d9ef>elif</span> src_node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;ignore<span style=color:#f92672>&amp;</span>quot;:
+                            ark_config<span style=color:#f92672>.</span>ignore<span style=color:#f92672>.</span>append(self<span style=color:#f92672>.</span>_get_node_text(src_node<span style=color:#f92672>.</span>childNodes))
+                <span style=color:#66d9ef>if</span> node<span style=color:#f92672>.</span>nodeName<span style=color:#f92672>.</span>lower() <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;dest_dir<span style=color:#f92672>&amp;</span>quot;:
+                    ark_config<span style=color:#f92672>.</span>set_property(<span style=color:#e6db74>&#39;dest_dir&#39;</span>, self<span style=color:#f92672>.</span>_get_node_text(node<span style=color:#f92672>.</span>childNodes))
+
+        <span style=color:#66d9ef>return</span> ark_config
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Given a particular node, get its text value
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_get_node_text</span>(self, node):
+        retVal <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>&amp;</span>quot;
+        <span style=color:#66d9ef>for</span> child <span style=color:#f92672>in</span> node:
+            <span style=color:#66d9ef>if</span> child<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>TEXT_NODE:
+                retVal <span style=color:#f92672>=</span> retVal <span style=color:#f92672>+</span> child<span style=color:#f92672>.</span>data
+            <span style=color:#66d9ef>elif</span> child<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>CDATA_SECTION_NODE:
+                retVal <span style=color:#f92672>=</span> retVal <span style=color:#f92672>+</span> child<span style=color:#f92672>.</span>data
+            <span style=color:#66d9ef>elif</span> child<span style=color:#f92672>.</span>hasChildNodes():
+                retVal <span style=color:#f92672>=</span> retVal <span style=color:#f92672>+</span> self<span style=color:#f92672>.</span>_get_node_text(child<span style=color:#f92672>.</span>childNodes)
+        <span style=color:#66d9ef>return</span> retVal
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Take white spaces out of the xml structure (they make traversing more difficult)
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_remove_whitespace_nodes</span>(self, node, unlink<span style=color:#f92672>=</span>False):
+        remove_list <span style=color:#f92672>=</span> []
+        <span style=color:#66d9ef>for</span> child <span style=color:#f92672>in</span> node<span style=color:#f92672>.</span>childNodes:
+            <span style=color:#66d9ef>if</span> child<span style=color:#f92672>.</span>nodeType <span style=color:#f92672>==</span> Node<span style=color:#f92672>.</span>TEXT_NODE <span style=color:#f92672>and</span> <span style=color:#f92672>not</span> child<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>strip():
+                remove_list<span style=color:#f92672>.</span>append(child)
+            <span style=color:#66d9ef>elif</span> child<span style=color:#f92672>.</span>hasChildNodes():
+                self<span style=color:#f92672>.</span>_remove_whitespace_nodes(child, unlink)
+        <span style=color:#66d9ef>for</span> node <span style=color:#f92672>in</span> remove_list:
+            node<span style=color:#f92672>.</span>parentNode<span style=color:#f92672>.</span>removeChild(node)
+            <span style=color:#66d9ef>if</span> unlink:
+                node<span style=color:#f92672>.</span>unlink()
+
+    <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>        Set what the folder delimeter should be
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_get_slash_char</span>(self):
+        <span style=color:#66d9ef>if</span> os<span style=color:#f92672>.</span>name <span style=color:#f92672>==</span> <span style=color:#f92672>&amp;</span>quot;nt<span style=color:#f92672>&amp;</span>quot;:
+            <span style=color:#66d9ef>return</span> <span style=color:#f92672>&amp;</span>quot;\<span style=color:#f92672>&amp;</span>quot;
+        <span style=color:#66d9ef>else</span>:
+            <span style=color:#66d9ef>return</span> <span style=color:#f92672>&amp;</span>quot;<span style=color:#f92672>/&amp;</span>quot;
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>slash_char</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;slash_char&#39;</span>, None)
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>conf</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;conf&#39;</span>, None)
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>xml_config_url</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;xml_config_url&#39;</span>, None)
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>config_dom</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;config_dom&#39;</span>, None)
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ArkConfig</span>():
+
+    <span style=color:#66d9ef>def</span> __init__(self, <span style=color:#f92672>**</span>kwargs):
+        self<span style=color:#f92672>.</span>properties <span style=color:#f92672>=</span> kwargs
+        self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;ignore&#39;</span>] <span style=color:#f92672>=</span> []
+
+    <span style=color:#66d9ef>def</span> __repr__(self):
+        <span style=color:#66d9ef>return</span> <span style=color:#f92672>&amp;</span>quot;ArkConfig (src_dir: <span style=color:#f92672>%</span>s, dest_dir: <span style=color:#f92672>%</span>s, ignore: <span style=color:#f92672>%</span>s<span style=color:#f92672>&amp;</span>quot; <span style=color:#f92672>%</span> (self<span style=color:#f92672>.</span>src_dir, self<span style=color:#f92672>.</span>dest_dir, self<span style=color:#f92672>.</span>ignore)
+
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>set_property</span>(self, prop, val):
+        self<span style=color:#f92672>.</span>properties[prop] <span style=color:#f92672>=</span> val
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>src_dir</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;src_dir&#39;</span>, None)
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>dest_dir</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;dest_dir&#39;</span>, None)
+    <span style=color:#a6e22e>@dest_dir.setter</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>dest_dir</span>(self, val): self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;dest_dir&#39;</span>] <span style=color:#f92672>=</span> val
+    <span style=color:#a6e22e>@dest_dir.deleter</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>dest_dir</span>(self): <span style=color:#66d9ef>del</span> self<span style=color:#f92672>.</span>properties[<span style=color:#e6db74>&#39;dest_dir&#39;</span>]
+
+    <span style=color:#a6e22e>@property</span>
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>ignore</span>(self): <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>properties<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;ignore&#39;</span>, None)
+
+<span style=color:#66d9ef>if</span> __name__<span style=color:#f92672>==&amp;</span>quot;__main__<span style=color:#f92672>&amp;</span>quot;:
+    bf <span style=color:#f92672>=</span> ArchiveFolders()
+    bf<span style=color:#f92672>.</span>run()</code></pre></div><p>And then the config file has the format:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#75715e>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style=color:#f92672>&lt;config&gt;</span>
+    <span style=color:#f92672>&lt;ark&gt;</span>
+        <span style=color:#f92672>&lt;src_config&gt;</span>
+            <span style=color:#f92672>&lt;src_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[c:\Users\troot\Desktop\_today]]&gt;</span><span style=color:#f92672>&lt;/src_dir&gt;</span>
+            <span style=color:#f92672>&lt;ignore&gt;</span><span style=color:#75715e>&lt;![CDATA[ignore_1.txt]]&gt;</span><span style=color:#f92672>&lt;/ignore&gt;</span>
+            <span style=color:#f92672>&lt;ignore&gt;</span><span style=color:#75715e>&lt;![CDATA[ignore_2.txt]]&gt;</span><span style=color:#f92672>&lt;/ignore&gt;</span>
+        <span style=color:#f92672>&lt;/src_config&gt;</span>
+        <span style=color:#f92672>&lt;dest_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[c:\Users\troot\Documents\Restore\_today]]&gt;</span><span style=color:#f92672>&lt;/dest_dir&gt;</span>
+    <span style=color:#f92672>&lt;/ark&gt;</span>
+    <span style=color:#f92672>&lt;ark&gt;</span>
+        <span style=color:#f92672>&lt;src_config&gt;</span>
+            <span style=color:#f92672>&lt;src_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[C:\Users\troot\Downloads]]&gt;</span><span style=color:#f92672>&lt;/src_dir&gt;</span>
+        <span style=color:#f92672>&lt;/src_config&gt;</span>
+        <span style=color:#f92672>&lt;dest_dir&gt;</span><span style=color:#75715e>&lt;![CDATA[C:UserstrootDocumentsRestoreDownloads]]&gt;</span><span style=color:#f92672>&lt;/dest_dir&gt;</span>
+    <span style=color:#f92672>&lt;/ark&gt;</span>
+<span style=color:#f92672>&lt;/config&gt;</span></code></pre></div></div><div class=card-footer><h5>Tags</h5><div class="tags btn-group" role=group aria-label="Tags list"><a href=/tags/software class="badge badge-primary">Software</a>
 <a href=/tags/python class="badge badge-primary">Python</a></div></div></div></article><div><ul class="nav justify-content-between"><li class=nav-item><a class=nav-link href=/post/2011/05/got-a-new-bike/ title="Got a new bike">Older</a></li><li class=nav-item><a class=nav-link href=/post/2011/09/tour-de-picnic/ title="Tour De Picnic">Newer</a></li></ul></div></main></div></div></body></html>

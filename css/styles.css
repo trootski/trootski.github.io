@@ -9302,6 +9302,10 @@ img.framed {
   outline: none;
 }
 
+.card .featured img {
+  width: 100%;
+}
+
 .card-text img {
   width: 100%;
   display: inline-block;
